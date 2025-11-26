@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEMILOS — Pemilihan Ketua OSIS</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PEMILOS 2025</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="container">
+<header class="header">
+    <h1>🗳️ PEMILOS 2025</h1>
+    <p>Suaramu Menentukan Masa Depan OSIS!</p>
+</header>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <div class="profile">
-            <div class="avatar"></div>
-            <h2>PEMILOS 2025</h2>
-            <p>Pemilihan Ketua & Wakil Ketua OSIS</p>
+<section class="about">
+    <h2>Apa itu PEMILOS?</h2>
+    <p>
+        PEMILOS adalah kegiatan demokrasi sekolah untuk memilih Ketua dan Wakil Ketua OSIS secara
+        <b>langsung, umum, bebas, dan rahasia</b>. Gunakan hak suaramu dengan bijak!
+    </p>
+</section>
 
-            <button class="btn">Informasi</button>
-            <button class="btn-outline">Hubungi Panitia</button>
+<section class="candidates">
+    <h2>👤 Kandidat Calon Ketua OSIS</h2>
+    <div class="candidate-list">
+
+        <div class="candidate-card">
+            <img src="https://via.placeholder.com/120" alt="Calon 1" />
+            <h3>Calon 01</h3>
+            <p class="visi">"OSIS Kreatif, Inovatif, dan Menginspirasi"</p>
+            <ul>
+                <li>✅ Mengadakan event bulanan</li>
+                <li>✅ Tingkatkan kebersamaan siswa</li>
+                <li>✅ Dukung pengembangan bakat</li>
+            </ul>
+            <button class="vote-btn" onclick="vote(1)">Pilih</button>
         </div>
 
-        <div class="info">
-            <h3>Tanggal Pemilos</h3>
-            <p>12–15 November 2025</p>
-
-            <h3>Lokasi</h3>
-            <p>Aula / Website Voting Sekolah</p>
-
-            <h3>Aturan Singkat</h3>
-            <p>• Siswa hanya boleh memilih 1 kali.</p>
-            <p>• Tidak boleh memaksa siswa lain.</p>
-            <p>• Jaga demokrasi dan kejujuran.</p>
-
-            <h3>Kontak Panitia</h3>
-            <p>osis@example.com</p>
-
-            <h3>Media Sosial OSIS</h3>
-            <p><a href="#">Instagram</a> | <a href="#">Website</a></p>
-        </div>
-    </aside>
-
-    <!-- MAIN CONTENT -->
-    <main class="main">
-
-        <section class="card">
-            <h2>Apa itu PEMILOS?</h2>
-            <p>
-                PEMILOS (Pemilihan Ketua OSIS) adalah kegiatan demokrasi sekolah yang bertujuan 
-                memilih ketua dan wakil ketua OSIS secara langsung, umum, bebas, dan rahasia.
-            </p>
-        </section>
-
-        <h2>Daftar Calon Ketua OSIS</h2>
-        <div class="projects">
-
-            <div class="project-card">
-                <div class="thumb"></div>
-                <h3>Calon 01 — (Nama Calon)</h3>
-                <p><b>Visi:</b> Mewujudkan OSIS yang kreatif, aktif, dan berintegritas.</p>
-                <p><b>Misi:</b> Meningkatkan kegiatan sekolah dan prestasi siswa.</p>
-                <div class="links">
-                    <a href="#">Profil</a> | <a href="#">Program Kerja</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="thumb"></div>
-                <h3>Calon 02 — (Nama Calon)</h3>
-                <p><b>Visi:</b> Menjadikan lingkungan sekolah lebih disiplin dan nyaman.</p>
-                <p><b>Misi:</b> Mengoptimalkan pelayanan siswa dan kegiatan OSIS.</p>
-                <div class="links">
-                    <a href="#">Profil</a> | <a href="#">Program Kerja</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="thumb"></div>
-                <h3>Calon 03 — (Nama Calon)</h3>
-                <p><b>Visi:</b> Mengembangkan bakat dan minat seluruh siswa.</p>
-                <p><b>Misi:</b> Mengadakan lomba dan event secara rutin.</p>
-                <div class="links">
-                    <a href="#">Profil</a> | <a href="#">Program Kerja</a>
-                </div>
-            </div>
-
+        <div class="candidate-card">
+            <img src="https://via.placeholder.com/120" alt="Calon 2" />
+            <h3>Calon 02</h3>
+            <p class="visi">"Sekolah Disiplin, Ramah, dan Berkualitas"</p>
+            <ul>
+                <li>✅ Layanan aspirasi siswa</li>
+                <li>✅ Lingkungan lebih nyaman</li>
+                <li>✅ Fokus pada program sosial</li>
+            </ul>
+            <button class="vote-btn" onclick="vote(2)">Pilih</button>
         </div>
 
-        <section class="card">
-            <h2>Mekanisme Pemilihan</h2>
-            <p>1. Siswa login ke sistem atau datang ke TPS sekolah.</p>
-            <p>2. Memilih salah satu calon ketua OSIS.</p>
-            <p>3. Sistem mencatat suara otomatis.</p>
-            <p>4. Hasil diumumkan setelah pemilihan ditutup.</p>
-        </section>
+        <div class="candidate-card">
+            <img src="https://via.placeholder.com/120" alt="Calon 3" />
+            <h3>Calon 03</h3>
+            <p class="visi">"Kolaborasi, Prestasi, dan Transparansi"</p>
+            <ul>
+                <li>✅ Program kerja jelas & terbuka</li>
+                <li>✅ Latihan kepemimpinan siswa</li>
+                <li>✅ Optimalkan media OSIS</li>
+            </ul>
+            <button class="vote-btn" onclick="vote(3)">Pilih</button>
+        </div>
 
-        <section class="card">
-            <h2>Jadwal Pemilos</h2>
-            <p>• Kampanye: 8–10 November</p>
-            <p>• Debat Kandidat: 11 November</p>
-            <p>• Voting: 12–15 November</p>
-            <p>• Pengumuman: 16 November</p>
-        </section>
+    </div>
+</section>
 
-        <section class="card">
-            <h2>Voting Online</h2>
-            <p>Gunakan tombol di bawah ini untuk memilih Ketua OSIS.</p>
-            <button class="btn" style="width:200px;">Mulai Memilih</button>
-        </section>
+<section class="rules">
+    <h2>📌 Aturan PEMILOS</h2>
+    <div class="rule-box">
+        <p>• 1 siswa = 1 suara</p>
+        <p>• Dilarang black campaign</p>
+        <p>• Dilarang memaksa pilihan orang lain</p>
+        <p>• Jaga sportivitas dan kejujuran</p>
+    </div>
+</section>
 
-    </main>
+<section class="result">
+    <h2>📊 Hasil Voting (Demo)</h2>
+    <div class="result-box">
+        <p id="r1">Calon 01: 0 suara</p>
+        <p id="r2">Calon 02: 0 suara</p>
+        <p id="r3">Calon 03: 0 suara</p>
+    </div>
+</section>
 
-</div>
+<footer class="footer">
+    <p>© 2025 OSIS Election System • Dibuat oleh siswa</p>
+</footer>
+
+<script>
+let suara = [0, 0, 0];
+
+function vote(id) {
+    if (localStorage.getItem("sudahMemilih")) {
+        alert("⚠ Kamu sudah memilih! (Demo localstorage)");
+        return;
+    }
+    suara[id - 1]++;
+    localStorage.setItem("sudahMemilih", "true");
+    updateResult();
+    alert("✅ Terima kasih! Suara kamu berhasil tercatat untuk Calon 0" + id);
+}
+
+function updateResult() {
+    document.getElementById("r1").innerText = "Calon 01: " + suara[0] + " suara";
+    document.getElementById("r2").innerText = "Calon 02: " + suara[1] + " suara";
+    document.getElementById("r3").innerText = "Calon 03: " + suara[2] + " suara";
+}
+
+function updateResult() {
+    for (let i = 0; i < 3; i++) {
+        document.getElementById("r" + (i + 1)).innerText =
+            "Calon 0" + (i + 1) + ": " + suara[i] + " suara";
+    }
+}
+</script>
 
 </body>
-  </html>
+</html>
